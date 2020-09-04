@@ -1,3 +1,4 @@
+<body style="background-color:lightblue;">
 <div class="container">
  <h1 class="text-center">Welkom bij de verjaardag.</h1>
  <br>
@@ -38,3 +39,4 @@
 
 </table>
 </div>
+</body>

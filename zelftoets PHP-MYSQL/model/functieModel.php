@@ -40,8 +40,8 @@
 
 
 	function createBezoeker($Voornaam, $Achternaam, $Geboortedatum){
-    	$conn=openDatabaseConnection();
-    	$query = $conn->prepare("INSERT INTO gegevens (Voornaam, Achternaam, Geboortedatum) VALUES (:Voornaam, :Achternaam, :Geboortedatum)");
+    	$db=openDatabaseConnection();
+    	$query = $db->prepare("INSERT INTO gegevens (Voornaam, Achternaam, Geboortedatum) VALUES (:Voornaam, :Achternaam, :Geboortedatum)");
     	$query->bindParam(":Voornaam", $Voornaam);
     	$query->bindParam(":Achternaam", $Achternaam);
     	$query->bindParam(":Geboortedatum", $Geboortedatum);
