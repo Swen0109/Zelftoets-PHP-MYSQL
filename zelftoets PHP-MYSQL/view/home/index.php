@@ -17,7 +17,7 @@
     <?php
       foreach ($info as $data){?>
       <tr>
-        <td><?php echo $data['Id']?></td>
+        <td><?php echo $data['id']?></td>
         <td>&nbsp;&nbsp;</td>
         <td><?php echo $data['Voornaam']?></td>
         <td>&nbsp;&nbsp;</td>
@@ -26,15 +26,15 @@
         <td><?php echo $data['Geboortedatum']?></td>
         <td></td>
       
-<td>&nbsp;&nbsp;<a class="btn-outline-danger" href="<?php echo URL?>home/delete/<?php echo $data["Id"]?>">Verwijderen</a></td>
+<td>&nbsp;&nbsp;<a class="btn-outline-danger" href="<?php echo URL?>home/delete/<?php echo $data["id"]?>">Verwijderen</a></td>
 
-<td>&nbsp;&nbsp;<a class="btn-outline-info" href="<?php echo URL?>home/update/<?php echo $data["Id"]?>">Wijzigen</a></td>
+<td>&nbsp;&nbsp;<a class="btn-outline-info" href="<?php echo URL?>home/update/<?php echo $data["id"]?>">Wijzigen</a></td>
     <tr>
     <tr>
 
   <?php }?>
 
-  <a class="text-center btn-outline-info" style="position: absolute; left:650px;" href="<?php echo URL?>home/create/<?php echo $data["Id"]?>">Registreer jezelf voor de verjaardag</a>
+  <a class="text-center btn-outline-info" style="position: absolute; left:650px;" href="<?php echo URL?>home/create/<?php echo $data["id"]?>">Registreer jezelf voor de verjaardag</a>
 
 </table>
 </div>

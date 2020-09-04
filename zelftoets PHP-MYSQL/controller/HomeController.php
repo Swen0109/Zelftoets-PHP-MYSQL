@@ -16,11 +16,24 @@ function destroy($id){
 }
 
 function update($id){
-    $data = getPeopleById($id);
-    render('home/update', array('data' => $data));
+    $mensen = getPeopleById($id);
+    render('home/update', array('mensen' => $mensen));
 }
 
 function edit($id){
     UpdatePeople($_POST, $id);
+    index();
+}
+
+
+function create(){
+    render("home/create");
+}
+
+function store(){
+    $Voornaam = $_POST["Voornaam"];
+    $Achternaam = $_POST["Achternaam"];
+    $Geboortedatum = $_POST["Geboortedatum"];
+    createBezoeker($Voornaam, $Achternaam, $Geboortedatum);
     index();
 }
